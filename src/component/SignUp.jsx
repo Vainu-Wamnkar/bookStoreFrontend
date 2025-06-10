@@ -29,7 +29,7 @@ function Signup() {
     }
 
     try {
-        const response = await axios.post('http://localhost:4001/user/signup', formData);
+        const response = await axios.post('https://bookstorebackend-4e3v.onrender.com/user/signup', formData);
         console.log("Signup Success:",JSON.stringify(response.data.user));
 
         if (response.data.success) {
