@@ -16,7 +16,7 @@ function App() {
 
   async function fetchBookData() {
     try {
-      const res = await axios.get("http://localhost:4001/book");
+      const res = await axios.get("https://bookstorebackend-4e3v.onrender.com/book");
       setBookData(res.data);
       console.log(res.data);
     } catch (error) {
